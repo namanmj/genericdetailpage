@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Generic Detail Page</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="app3ruf.js"></script>
+      
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <main class="pb-4">
+         <section class="section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                        
+                     <h4 id="i">{title}</h4>
+                     <h5 id="j">{Sub-title}</h5>
+                  </div>
+                  <div class="loader" id="loader">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <br>
+         <section class="section section-detail">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6 col-sm-12">
+                     <div class="container-left">
+                         <div class="row py-3">
+                             <div class="col-sm-12">
+                                 <h5 id="g"> {main_section_left_title}</h5>
+                                 
+                             </div>
+                         </div>
+                        <!--<div class="row">
+                           <div  id="a" class="col-sm-6">Key 1</div>
+                           <div id="k" class="col-sm-6">Value 1</div>
+                        </div>
+                        <div class="row">
+                           <div id="b" class="col-sm-6">Key 1</div>
+                           <div id="l"class="col-sm-6">Value 1</div>
+                        </div>
+                        <div class="row">
+                           <div id="c" class="col-sm-6">Key 1</div>
+                           <div id="m" class="col-sm-6">Value 1</div>
+                        </div>-->
+                        
+                        
+                        
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12">
+                     <div class="container-right">
+                        <div class="row py-3">
+                            <div class="col-sm-12">
+                                <h5 id="h">{main_section_right_title}</h5>
+                            </div>
+                        </div>
+                        <!--<div class="row">
+                           <div id="d" class="col-sm-6">Key 1</div>
+                           <div id="n" class="col-sm-6">Value 1</div>
+                        </div>
+                        <div class="row">
+                           <div id="e" class="col-sm-6">Key 1</div>
+                           <div id="o" class="col-sm-6">Value 1</div>
+                        </div>
+                        <div class="row">
+                           <div id="f" class="col-sm-6">Key 1</div>
+                           <div id="p" class="col-sm-6">Value 1</div>
+                        </div>-->
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section section-array-detail">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                     <!--<li class="nav-item">
+                        <a id="cc" class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">{Depending upon array_sections[0]}</a>
+                     </li>
+                     <li class="nav-item">
+                        <a id="dd" class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">{Depending upon array_sections[1]}</a>
+                     </li>-->
+              
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                     <!--<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                         <div class="container">
+                             <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="container-array">
+                                       <div class="row">
+                                          <div class="col-sm-12">
+                                              <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                      <strong> 1. <h7 id="q">  {key}  </h7> :</strong> <h7 id="r">{value}</h7>
+                                                    </div>
+                                                   
+                                                    <div class="col-sm-6">
+                                                      <strong>  <h7 id="s">  {key}  </h7> :</strong> <h7 id="t">{value}</h7>
+                                                   </div>
+                                                </div>  
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                      <strong> 2. <h7 id="u">  {key}  </h7> :</strong> <h7 id="v">{value}</h7>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                      <strong>  <h7 id="w">  {key}  </h7> :</strong> <h7 id="x">{value}</h7>
+                                                   </div>
+                                                </div>  
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                      <strong> 3. <h7 id="y">  {key}  </h7> :</strong> <h7 id="z">{value}</h7>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                      <strong>  <h7 id="aa">  {key}  </h7> :</strong> <h7 id="bb">{value}</h7>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              
+                             </div>
+                         </div>
+                     </div>
+                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-md-12 col-sm-12">
+                                  <div class="container">
+                                     <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="container">
+                                              <div class="row">
+                                                <div class="col-sm-6">
+                                                   <strong> 1. <h7 id="ee">  {key}  </h7> :</strong> <h7 id="ff">{value}</h7>
+                                                 </div>
+                                                
+                                                 <div class="col-sm-6">
+                                                   <strong>  <h7 id="gg">  {key}  </h7> :</strong> <h7 id="hh">{value}</h7>
+                                                </div>
+                                             </div>  
+                                             <div class="row">
+                                                 <div class="col-sm-6">
+                                                   <strong> 2. <h7 id="ii">  {key}  </h7> :</strong> <h7 id="jj">{value}</h7>
+                                                 </div>
+                                                 <div class="col-sm-6">
+                                                   <strong>  <h7 id="kk">  {key}  </h7> :</strong> <h7 id="ll">{value}</h7>
+                                                </div>
+                                             </div>  
+                                             <div class="row">
+                                                 <div class="col-sm-6">
+                                                   <strong> 3. <h7 id="mm">  {key}  </h7> :</strong> <h7 id="nn">{value}</h7>
+                                                 </div>
+                                                 <div class="col-sm-6">
+                                                   <strong>  <h7 id="oo">  {key}  </h7> :</strong> <h7 id="pp">{value}</h7>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            
+                           </div>
+                       </div>-->
+                       
+                    
+               </div>
+            </div>
+            </div>
+         </section>
+      </main>
+      <body>
+         </html>
